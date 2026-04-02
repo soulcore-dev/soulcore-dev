@@ -1,8 +1,9 @@
 <div align="center">
 
 <img src="https://img.shields.io/badge/AI_Agents-31-8B5CF6?style=for-the-badge" />
-<img src="https://img.shields.io/badge/MCP_Servers-12-F97316?style=for-the-badge" />
-<img src="https://img.shields.io/badge/Lines_Shipped-200K+-10B981?style=for-the-badge" />
+<img src="https://img.shields.io/badge/Divisions-12-F97316?style=for-the-badge" />
+<img src="https://img.shields.io/badge/Services-50+-10B981?style=for-the-badge" />
+<img src="https://img.shields.io/badge/MCP_Servers-12-3B82F6?style=for-the-badge" />
 
 # SOUL CORE
 
@@ -97,6 +98,23 @@ graph TB
     style SPE fill:#6b7280,stroke:#333,color:#fff
 ```
 
+## 12 Divisions, 50+ Services
+
+| Division | Key Services |
+|----------|-------------|
+| **AI and Automation** | Chatbots, autonomous agents, n8n/Make workflows |
+| **Software Development** | Web/mobile apps, REST/GraphQL APIs, DevSecOps |
+| **Cybersecurity** | Pentesting, audits, OWASP compliance, hardening |
+| **Trading Systems** | MT5/MQL5 frameworks, algo trading, prop firm tools |
+| **Industrial and IoT** | Industry 4.0, SCADA/PLC, CNC, mechatronics |
+| **APIs and Integrations** | MCP servers, webhooks, microservices |
+| **Design and UX** | Websites, branding, prototypes, UX research |
+| **E-Commerce** | Custom storefronts, Shopify, WooCommerce, marketplaces |
+| **Digital Marketing** | SEO, Google Ads, social media, content |
+| **Data Science** | BI dashboards, predictive analysis, ETL, ML |
+| **Cloud and DevOps** | AWS/GCP/Azure, CI/CD, Docker/K8s, monitoring |
+| **Legacy Modernization** | COBOL/FORTRAN to modern tech |
+
 ## What We Ship
 
 | Area | Highlights | Repos |
@@ -110,17 +128,19 @@ graph TB
 
 ```mermaid
 graph TB
-    L["Languages\nGo - Python - TypeScript - MQL5 - Solidity"]
-    F["Frameworks\nNext.js 14 - FastAPI - Flask - Vue.js"]
-    I["Infrastructure\nDocker - Supabase - PostgreSQL - Vercel"]
-    A["AI Layer\n12 MCP Servers - Neuron-Core - Multi-LLM - Swarm"]
+    L["Languages\nGo - Python - TypeScript - Java\nMQL5 - Solidity - Rust"]
+    F["Frameworks\nNext.js 14 - FastAPI - Spring Boot\nVue.js - React - Angular"]
+    I["Infrastructure\nAWS - GCP - Azure - Docker - K8s\nSupabase - PostgreSQL - Redis"]
+    A["AI and Security\n12 MCP Servers - Neuron-Core\nBurp Suite - Metasploit - OWASP ZAP"]
+    D["Data\nSnowflake - BigQuery - Power BI\nTensorFlow - scikit-learn - Airflow"]
 
-    L --> F --> I --> A
+    L --> F --> I --> A --> D
 
     style L fill:#1e293b,stroke:#8b5cf6,color:#fff
     style F fill:#1e293b,stroke:#3b82f6,color:#fff
     style I fill:#1e293b,stroke:#10b981,color:#fff
     style A fill:#1e293b,stroke:#f97316,color:#fff
+    style D fill:#1e293b,stroke:#ef4444,color:#fff
 ```
 
 ## Open Source MCP Servers -- Coming Soon
@@ -138,14 +158,11 @@ graph TB
 
 ## Work With Us
 
-| Service | What You Get |
-|---------|-------------|
-| **Cybersecurity** | Pentesting, audits, vulnerability research |
-| **Trading Systems** | MT5/MQL5, algo trading, prop firm tools |
-| **Full-Stack SaaS** | Multi-tenant, AI integration, cloud deploy |
-| **AI Integration** | MCP servers, multi-agent, computer vision |
+**12 divisions | 50+ services | Any stack | Any scale**
 
-**Rate:** $50/hr+ | **Speed:** 90x | **Remote worldwide**
+**Rate:** $50/hr+ | **Speed:** 90x | **Remote worldwide** | **EN/ES**
+
+[soulcore.dev](https://soulcore.dev)
 
 [Open an issue](https://github.com/soulcore-dev/soulcore-dev/issues) | contact@soulcore.dev
 

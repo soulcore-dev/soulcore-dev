@@ -22,82 +22,29 @@
 
 ```mermaid
 flowchart TB
-    C["Client Requirement"] --> P["Stakeholder Agent\nAnalyzes WHAT and WHY"]
-    P --> S["Coordinator Agent\nPlans HOW and WHEN"]
-    S --> E["31 Specialized Agents\nExecute in Parallel"]
-    E --> A["QA + Security Agents\nAudit Everything"]
-    A --> H["Human Team\nReview + Final Approval"]
-    H --> D["Delivered"]
+    C["CLIENT"] --> H["HUMAN TEAM\n6 engineers"]
+    H --> CMD["COMMAND\nCoordinator + QA + Lifecycle"]
+    CMD --> ENG["ENGINEERING\nBackend + Frontend + Design + QA + DevOps"]
+    CMD --> INT["INTELLIGENCE\nTrading + Security + Prediction + Quant"]
+    ENG --> SPE["SPECIALIZED\nMedical + Legal + Blockchain + Legacy + 15 more"]
+    INT --> SPE
+    SPE --> QA["AUDIT\nQA + Security agents review everything"]
+    QA --> H
+    H --> D["DELIVERED"]
 
     style C fill:#ef4444,stroke:#333,color:#fff
-    style P fill:#8b5cf6,stroke:#333,color:#fff
-    style S fill:#3b82f6,stroke:#333,color:#fff
-    style E fill:#0ea5e9,stroke:#333,color:#fff
-    style A fill:#f97316,stroke:#333,color:#fff
     style H fill:#10b981,stroke:#333,color:#fff
-    style D fill:#10b981,stroke:#333,color:#fff
-```
-
-> Every line of code is reviewed by humans. AI accelerates -- humans approve.
-
-## The Team
-
-**Human engineers** who direct, review, and make final decisions + **31 AI agents** with persistent memory and domain expertise.
-
-<table>
-<tr>
-<td align="center" width="16%"><strong>R. Paul</strong><br><sub>Founder</sub></td>
-<td align="center" width="16%"><strong>R. Santos</strong><br><sub>Lead Dev</sub></td>
-<td align="center" width="16%"><strong>M. Diaz</strong><br><sub>Business</sub></td>
-<td align="center" width="16%"><strong>G. Vidal</strong><br><sub>Sales</sub></td>
-<td align="center" width="16%"><strong>A. Martinez</strong><br><sub>Marketing</sub></td>
-<td align="center" width="16%"><strong>L. Reyes</strong><br><sub>Marketing</sub></td>
-</tr>
-</table>
-
-## AI Agent Architecture
-
-```mermaid
-graph TB
-    subgraph CMD["Command Layer - 3 Agents"]
-        C1["Project Coordinator"]
-        C2["Documentation + QA"]
-        C3["Lifecycle Manager"]
-    end
-
-    subgraph ENG["Engineering Layer - 5 Agents"]
-        E1["Backend + APIs"]
-        E2["Frontend Universal"]
-        E3["Design + UX"]
-        E4["Testing + QA"]
-        E5["Infrastructure + DevOps"]
-    end
-
-    subgraph INT["Intelligence Layer - 4 Agents"]
-        I1["Trading + Markets"]
-        I2["Cybersecurity"]
-        I3["Prediction Systems"]
-        I4["Quantitative Analysis"]
-    end
-
-    subgraph SPE["Specialized Layer - 19 Agents"]
-        S1["Medical AI"]
-        S2["Legal + Compliance"]
-        S3["Blockchain"]
-        S4["Legacy Systems"]
-        S5["and 15 more..."]
-    end
-
-    CMD --> ENG
-    CMD --> INT
-    ENG --> SPE
-    INT --> SPE
-
     style CMD fill:#8b5cf6,stroke:#333,color:#fff
     style ENG fill:#3b82f6,stroke:#333,color:#fff
     style INT fill:#f97316,stroke:#333,color:#fff
     style SPE fill:#6b7280,stroke:#333,color:#fff
+    style QA fill:#f97316,stroke:#333,color:#fff
+    style D fill:#10b981,stroke:#333,color:#fff
 ```
+
+> 6 human engineers direct. 31 AI agents execute. Humans review and approve everything.
+
+**Human Team:** R. Paul (Founder) -- R. Santos (Lead Dev) -- M. Diaz (Business) -- G. Vidal (Sales) -- A. Martinez (Marketing) -- L. Reyes (Marketing)
 
 ## 12 Divisions, 50+ Services
 

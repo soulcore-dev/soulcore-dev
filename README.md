@@ -22,11 +22,11 @@
 
 ```mermaid
 flowchart TB
-    C["Client Requirement"] --> P["PRAXIS -- Analyzes WHAT and WHY"]
-    P --> S["SIRIUS -- Plans HOW and WHEN"]
-    S --> E["31 Agents Execute"]
-    E --> A["ARGOS + NEMESIS -- QA + Security"]
-    A --> H["Human Team -- Review + Approval"]
+    C["Client Requirement"] --> P["Stakeholder Agent\nAnalyzes WHAT and WHY"]
+    P --> S["Coordinator Agent\nPlans HOW and WHEN"]
+    S --> E["31 Specialized Agents\nExecute in Parallel"]
+    E --> A["QA + Security Agents\nAudit Everything"]
+    A --> H["Human Team\nReview + Final Approval"]
     H --> D["Delivered"]
 
     style C fill:#ef4444,stroke:#333,color:#fff
@@ -59,32 +59,33 @@ flowchart TB
 
 ```mermaid
 graph TB
-    subgraph CMD["Command"]
-        SIRIUS["SIRIUS - PMO"]
-        PRAXIS["PRAXIS - Scribe"]
-        JANUS["JANUS - Lifecycle"]
+    subgraph CMD["Command Layer - 3 Agents"]
+        C1["Project Coordinator"]
+        C2["Documentation + QA"]
+        C3["Lifecycle Manager"]
     end
 
-    subgraph ENG["Engineering"]
-        ATLAS["ATLAS - Backend"]
-        IRIS["IRIS - Frontend"]
-        MUSE["MUSE - Design"]
-        ARGOS["ARGOS - QA"]
-        VULCAN["VULCAN - DevOps"]
+    subgraph ENG["Engineering Layer - 5 Agents"]
+        E1["Backend + APIs"]
+        E2["Frontend Universal"]
+        E3["Design + UX"]
+        E4["Testing + QA"]
+        E5["Infrastructure + DevOps"]
     end
 
-    subgraph INT["Intelligence"]
-        MOISES["MOISES - Trading"]
-        NEMESIS["NEMESIS - Security"]
-        KAIROS["KAIROS - Prediction"]
-        SIGMA["SIGMA - Quant"]
+    subgraph INT["Intelligence Layer - 4 Agents"]
+        I1["Trading + Markets"]
+        I2["Cybersecurity"]
+        I3["Prediction Systems"]
+        I4["Quantitative Analysis"]
     end
 
-    subgraph SPE["+ 19 Specialized"]
-        D1["GALEN - Medical"]
-        D2["THEMIS - Legal"]
-        D3["CIPHER - Blockchain"]
-        D4["and more..."]
+    subgraph SPE["Specialized Layer - 19 Agents"]
+        S1["Medical AI"]
+        S2["Legal + Compliance"]
+        S3["Blockchain"]
+        S4["Legacy Systems"]
+        S5["and 15 more..."]
     end
 
     CMD --> ENG
